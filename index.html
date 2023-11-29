@@ -11,13 +11,6 @@
 </head>
 
     <body>
-        <section class="frase1">
-            <h3>Design can be</h3>
-            <h3 id="art">art</h3>
-            <h3>.</h3>
-            <h4>Paul Rand</h4>
-        </section>
-
      <!--Header-->
     <header>
 
@@ -44,7 +37,7 @@
         <section id="section-container">
             <div class="section1">
                 <div class="titulo">
-                    <h1>Portfolio - Digital design</h1> <!--CONSULTAR!!!!-->
+                    <h1><strong>Portfolio - Digital design</strong></h1> <!--consultar xq se cambia el tamaño de font al colocar linkeo de bootstrap-->
                 </div>
                 <div class="subtitulo">
                     <h2 class="name">Camila Kreativ</h2>
@@ -91,32 +84,31 @@
         </section>
 
         <!--Sección 3: Trabajos recientes-->
-        <section id="RecentWorks">
+        <section id="RecentWorks"><!--Consultar porque no anda-->
             <h2>Recent works</h2>
 
-            <div id="CarrouselContenedor">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/img_uno.png" class="d-block w-100" alt="Guideline sheet The Vegan Tips">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/img_dos.png" class="d-block w-100" alt="Cards Catsitting">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/img_tres.png" class="d-block w-100" alt="Mockup street billboard">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/img_uno.png" class="d-block w-100" alt="Guideline sheet The Vegan Tips">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/img_dos.png" class="d-block w-100" alt="Cards Catsitting">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/img_tres.png" class="d-block w-100" alt="Mockup street billboard">
+                  </div>
                 </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
         </section>
 
         <!--Sección 4: Contacto-->
@@ -159,7 +151,7 @@
         <section class="FooterContent">
             <ul>
                 <li>
-                    <h2 id="FooterContent">Contact me</h2><br>
+                    <h2 id="FooterContent">Contact me</h2>
                 </li>
                 <li>
                     <strong>Mail: </strong><a href="mailto:camila.kreativ@gmail.com">camila.kreativ@gmail.com</a>
@@ -168,12 +160,9 @@
                     <strong>WhatsApp: </strong> <a href="https://wa.link/ejgtke">+49 1575 2614294</a>
                 </li>
             </ul>
-            <div>
-                <h5>@2023 Camila Kreativ - All rights reserved.</h5>
-            </div>
             <ul>
                 <li>
-                    <h2 id="FooterContent">Social Media</h2><br>
+                    <h2 id="FooterContent">Social Media</h2>
                 </li>
                 <li>
                     <a href="https://instagram.com/camila.kreativ?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
@@ -182,6 +171,11 @@
                     <a href="https://www.behance.net/camilakreativ">Behance</a>
                 </li>
             </ul>
+        </section>
+        <section>
+            <div id="derechos">
+                <h5>@2023 Camila Kreativ - All rights reserved.</h5>
+            </div>
         </section>
     </footer>
     </body>
