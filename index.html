@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO - Camila Kreativ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- linkeo de CSS -->
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+
+    <body>
+        <section class="frase1">
+            <h3>Design can be</h3>
+            <h3 id="art">art</h3>
+            <h3>.</h3>
+            <h4>Paul Rand</h4>
+        </section>
+
+     <!--Header-->
+    <header>
+
+        <!--Logo: IMG-->
+        <section class="logo" id="LogoAlpha">      
+        <img src="images/Logo.png" alt="Camila Kreativ">
+        </section>  
+
+        <!--Menú de navegación-->
+        <nav>
+            <ul>
+               <li id="selection"><a href="index.html">Home</a></li>
+               <li id="noselection"><a href="pages/id-visual.html">Visual Identity</a></li>
+               <li id="noselection"><a href="pages/posters.html">Posters</a></li>
+               <li id="noselection"><a href="pages/rrss.html">Social Media</a></li>
+               <li id="noselection"><a href="pages/ux-research.html">UX Research</a></li>
+               <li id="noselection"><a href="pages/web-design.html">Web Design</a></li>
+               <li id="noselection"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-container">
+            <div class="section1">
+                <div class="titulo">
+                    <h1>Portfolio - Digital design</h1> <!--CONSULTAR!!!!-->
+                </div>
+                <div class="subtitulo">
+                    <h2 class="name">Camila Kreativ</h2>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="foto">
+                    <img src="images/ProfilePic4.png" alt="Foto de perfil">
+                </div>
+            </div>
+        </section>
+
+        <!--Sección 1: Biografia-->
+        <section class="Biografia" id="Bio"><h2>Biography</h2>
+                <p>My name is <strong>Camila Francois</strong>. I am originally from Argentina but currently living in Germany. I am a 3rd year Digital Design student. I am looking forward to start my career in design, to keep learning and offer my services, with responsibility and detail.</p>
+        </section>
+
+        <!--Sección 2: Curriculum Vitae-->
+        <section id="curriculum">
+            <h2>Curriculum Vitae</h2>
+            <ul>
+                <li>
+                    <strong>Software:</strong>
+                </li>
+                <li>
+                    Adobe Illustrator | Adobe Photoshop | Figma
+                </li><br>
+                <li>
+                    <strong>Languages:</strong>
+                </li>
+                <li>
+                    Spanish (Nativ) | English (C1) | German (B2)
+                </li><br>
+                <li>
+                    <strong>Education:</strong>
+                </li>
+                <li>
+                    Lic. Digital Design, Universidad del Este, Argentina (in course)
+                </li>
+                <li>
+                    Web development, Coder House, Argentina
+                </li>
+            </ul>
+        </section>
+
+        <!--Sección 3: Trabajos recientes-->
+        <section id="RecentWorks">
+            <h2>Recent works</h2>
+
+            <div id="CarrouselContenedor">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/img_uno.png" class="d-block w-100" alt="Guideline sheet The Vegan Tips">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/img_dos.png" class="d-block w-100" alt="Cards Catsitting">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img_tres.png" class="d-block w-100" alt="Mockup street billboard">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección 4: Contacto-->
+        <section id="contacto">
+            <h2>Contact me</h2>
+
+            <ul>
+                <li><a href="https://instagram.com/camila.kreativ?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
+                <li><a href="https://www.behance.net/camilakreativ">Behance</a></li>
+                <li><a href="https://wa.link/ejgtke">WhatsApp</a></li>
+                <li><a href="mailto:camila.kreativ@gmail.com">Mail</a></li>
+            </ul>
+            <!--
+            <form action="form.php" method="post" id="form"> 
+                <label for="">Name:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Names">
+
+                <label for="">E-mail:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="name@e-mail.com">
+        
+                <select name="" id="">
+                    <option value="">Thema</option>
+                    <option value="">Pricing</option>
+                    <option value="">Colaboration</option>
+                    <option value="">Other</option>
+                </select>
+        
+                <label for="">Message:</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+                <input type="submit" value="Send">
+            </form> 
+            -->
+
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <section class="FooterContent">
+            <ul>
+                <li>
+                    <h2 id="FooterContent">Contact me</h2><br>
+                </li>
+                <li>
+                    <strong>Mail: </strong><a href="mailto:camila.kreativ@gmail.com">camila.kreativ@gmail.com</a>
+                </li>
+                <li>
+                    <strong>WhatsApp: </strong> <a href="https://wa.link/ejgtke">+49 1575 2614294</a>
+                </li>
+            </ul>
+            <div>
+                <h5>@2023 Camila Kreativ - All rights reserved.</h5>
+            </div>
+            <ul>
+                <li>
+                    <h2 id="FooterContent">Social Media</h2><br>
+                </li>
+                <li>
+                    <a href="https://instagram.com/camila.kreativ?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/camilakreativ">Behance</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    </body>
+    
+</html>
