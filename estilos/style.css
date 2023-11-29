@@ -93,10 +93,6 @@ main section div.section2 div.foto {
     padding-bottom: 40px;
 }
 
-#Proyecto {
-    padding-bottom: 20px;
-}
-
 .Biografia p {
     padding: 40px 10px;
     background-color: #323232;
@@ -142,6 +138,12 @@ p {
     margin-bottom: 60px;
 }
 
+#Proyecto {
+    padding-bottom: 20px;
+}
+
+
+
 /*Contacto*/
 
 section#contacto ul {
@@ -174,6 +176,8 @@ footer {
     padding-top: 20px;
     padding-bottom: 60px;
     text-align: center;
+    font-family: 'Chivo', sans-serif;
+
 }
 
 footer .FooterContent ul li a {
@@ -190,6 +194,7 @@ footer .FooterContent #FooterContent{
 footer .FooterContent ul li {
     color: rgb(28, 28, 28);
     text-align: center;
+    
 }
 
 footer .FooterContent ul {
