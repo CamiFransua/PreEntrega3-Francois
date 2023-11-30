@@ -34,6 +34,12 @@ h2 {
     margin: 40px;
 }
 
+/*Estilos de portada*/
+
+#Portada {
+    display: none;
+}
+
 /*Estilos de header*/
 
 header {
@@ -176,6 +182,15 @@ main section#IMGIV2 {
     margin: 0px 40px;
 }
 
+main section#IMGP {
+    display: wrap;
+    margin: 40px 40px;
+}
+
+main section#IMGP img {
+    margin-bottom: 40px;
+}
+
 main section div img {
     width: 100%;
     height: 100%;
@@ -294,8 +309,8 @@ footer section div#derechos {
         height: 400px;
     }
 
-    .subtitulo {
-        text-align: end;
+    #section-container div.section1 div.subtitulo h2 {
+        text-align: right;
     }
 
     main .IMG114 { /*No anda*/
@@ -320,6 +335,12 @@ footer section div#derechos {
         grid-column: span 2;
     }
 
+    main section#IMGP {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+    }
 
     footer .FooterContent {
         display: flex;
@@ -336,6 +357,45 @@ footer section div#derechos {
     header {
         border: none;
     }
+
+    /*Estilos de portada*/
+
+    #Portada {
+        display: block;
+    }
+
+
+    .frase1 {
+        display: flex;
+        background-color: #f5f5f5;
+        height: 750px;
+        align-items: baseline;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .frase1 h3 {
+        font-family: 'Chivo', sans-serif;
+        color: rgb(28, 28, 28);
+        font-size: 70px;
+        margin-top: 250px;
+    }
+
+
+    .frase1 #art {
+        color: rgb(207,18, 89);
+        font-family: 'Pacifico', cursive;
+        font-size: 150px;
+    }
+
+
+    .frase1 h4 {
+        font-family: 'Chivo', sans-serif;
+        font-size: 25px;
+        font-style: italic;
+    }
+
 
     /*main .IMG113, .IMG114, .IMG115{
         display: block;
@@ -395,6 +455,10 @@ footer section div#derechos {
     .IMG125 {
         grid-column: span 1;
         grid-row: span 1;
+    }
+
+    main section#IMGP {
+        display: flex;
     }
 }
 
