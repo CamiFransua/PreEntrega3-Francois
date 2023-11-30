@@ -142,7 +142,45 @@ p {
     padding-bottom: 20px;
 }
 
+/*grid en Id Visual*/
 
+main .IMG113, .IMG115 { /*Me borra tambien la .IMG114, consultar*/
+    display: none;
+}
+
+main section#IMGIV1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40%);
+    height: 70vh;
+    gap: 2rem;
+    margin: 0px 40px;
+}
+
+main section div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .IMG121, .IMG125 {
+    display: none;
+}
+
+main section#IMGIV2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40%);
+    height: 70vh;
+    gap: 2rem;
+    margin: 0px 40px;
+}
+
+main section div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /*Contacto*/
 
@@ -160,6 +198,28 @@ section#contacto ul li {
 }
 
 #contacto ul li a{
+    list-style: none;
+    text-decoration: underline;
+    color: #f5f5f5;
+}
+
+#contactoiv { /*Tuve que bajar esta seccion 220px porque me quedaba superpuesta a la ultima imagen. No entiendo por que*/
+    margin-top: 220px;
+}
+section#contactoiv ul {
+    margin-bottom: 80px;
+}
+
+section#contactoiv ul li {
+    list-style: none;
+    color: #f5f5f5;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    margin: 5px 40px;
+}
+
+#contactoiv ul li a{
     list-style: none;
     text-decoration: underline;
     color: #f5f5f5;
@@ -210,37 +270,19 @@ footer section div#derechos {
 @media screen and (min-width:600px) {
     header {
         height: 100px;
-        display: flex;
-        background-color: rgb(28, 28, 28);
         align-items: center;
-        justify-content: space-between;
         position: sticky;
         top: 0px;
         z-index: 5;
         text-align: center;
 
     }
-    
-    
+        
     header nav ul {
         display: flex;
         gap: 20px;
-        font-family: 'Chivo', sans-serif;
-        margin-left: 40px;
-        margin-right: 40px;
     }
-    
-    
-    nav ul li#noselection a{
-        color: #f5f5f5;
-    }
-    
-    
-    nav ul li#selection a{
-        color: rgb(244, 211, 94);
-    }
-    
-    
+        
     header .logo {
         margin-left: 40px;
     }
@@ -256,6 +298,29 @@ footer section div#derechos {
         text-align: end;
     }
 
+    main .IMG114 { /*No anda*/
+        display: block;
+    }
+
+    main section#IMGIV1 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2, 50%;
+    }
+
+    main .IMG114 {
+        grid-column: span 2;
+    }
+
+    main section#IMGIV2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2, 50%;
+    }
+
+    main .IMG122 {
+        grid-column: span 2;
+    }
+
+
     footer .FooterContent {
         display: flex;
         text-align: center;
@@ -269,38 +334,68 @@ footer section div#derechos {
 
 @media screen and (min-width: 1024px) {
     header {
-        height: 100px;
-        display: flex;
-        background-color: rgb(28, 28, 28);
-        align-items: center;
-        justify-content: space-between;
-        position: sticky;
-        top: 0px;
-        z-index: 5;
         border: none;
     }
+
+    /*main .IMG113, .IMG114, .IMG115{
+        display: block;
+    } Dejo esto en comentario porque no puedo lograr colocarlo en la grilla*/
     
-    
-    header nav ul {
-        display: flex;
-        gap: 20px;
-        font-family: 'Chivo', sans-serif;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-        
-    nav ul li#noselection a{
-        color: #f5f5f5;
-    }
-        
-    nav ul li#selection a{
-        color: rgb(244, 211, 94);
-    }
-        
-    header .logo {
-        margin-left: 40px;
+    main section#IMGIV1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 4, 25%;
     }
 
+    .IMG111 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .IMG112 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .IMG113 { /*Las siguientes tres imagenes estarian codeadas asi si apareciesen :D*/
+        grid-row: span 4;
+    }
+
+    .IMG114, .IMG115 {
+        grid-row: span 2;
+    }
+
+    main .IMG121, .IMG125 {
+        display: block;
+    }
+
+    main section#IMGIV2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 4, 25%;
+    }
+
+    .IMG121 {
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+
+    .IMG122 {
+        grid-column: span 2;
+    }
+
+    .IMG123 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .IMG124 {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .IMG125 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
 
 
