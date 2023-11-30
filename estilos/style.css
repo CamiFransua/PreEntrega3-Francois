@@ -218,14 +218,14 @@ section#contacto ul li {
     color: #f5f5f5;
 }
 
-#contactoiv { /*Tuve que bajar esta seccion 220px porque me quedaba superpuesta a la ultima imagen. No entiendo por que*/
+#contacto { /*Tuve que bajar esta seccion 220px porque me quedaba superpuesta a la ultima imagen. No entiendo por que*/
     margin-top: 220px;
 }
-section#contactoiv ul {
+section#contacto ul {
     margin-bottom: 80px;
 }
 
-section#contactoiv ul li {
+section#contacto ul li {
     list-style: none;
     color: #f5f5f5;
     font-family: 'Catamaran', sans-serif;
@@ -234,7 +234,7 @@ section#contactoiv ul li {
     margin: 5px 40px;
 }
 
-#contactoiv ul li a{
+#contacto ul li a{
     list-style: none;
     text-decoration: underline;
     color: #f5f5f5;
