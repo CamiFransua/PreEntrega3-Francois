@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;900&family=Chivo&family=Mate&family=Pacifico&display=swap');
+@import "secundario/variables";
+
+/*
+font-family: 'Catamaran', sans-serif;
+font-family: 'Chivo', sans-serif;
+font-family: 'Mate', serif;
+font-family: 'Pacifico', cursive;
+*/
+
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos generales*/
+
+body{
+    background-color: $color-fondo;
+}
+
+h2{
+    font-family: 'Chivo', sans-serif;
+    color: $color-texto;
+    font-style: normal;
+    font-size: 30px;
+    margin: $margen-iyd;
+}
+
+h5 {
+    font-size: 10px;
+}
+
+p{
+    color: #f5f5f5;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    margin: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*Estilos de portada*/
+
+#Portada{
+    display: none;
+}
+
+/*Estilos de header*/
+
+header{
+    display: flex;
+    height: 200px;
+    background-color: $color-fondo;
+    text-align: right;
+    justify-content: space-between;
+    margin: $margen-hyv 0px 0px;
+    border-bottom: 2px solid $color-texto;
+    section.logo{
+        img{
+            margin-left: $margen-iyd / 2;
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            font-family: 'Chivo', sans-serif;
+            margin: 0px $margen-iyd;
+            li#noselection{
+                a{
+                    text-decoration: none;
+                    color: $color-texto;
+                }
+            }
+            li#selection{
+                a{
+                    text-decoration: none;
+                    color: $color-acento2;
+                }
+            }
+        }
+    }
+}
+
+/*Estilos de main*/
+
+main{
+    section#section-container{
+        div.section1{
+            div.titulo{
+                display: flex;
+                justify-content: center;
+                font-size: 40px;
+                color: $color-texto;
+                font-family: 'Catamaran', sans-serif;
+                font-weight: 900;
+                margin-top: $margen-hyv*2;
+                text-align: center;
+            }
+            div.subtitulo{
+                h2.name{
+                    color: $color-acento2;
+                    text-align: center;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        div.section2{
+            div.foto{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    section.PageTitle{
+        padding-bottom: $margen-hyv*2;
+    }
+    section.Biografia{
+        p{
+            padding: 40px 10px;
+            background-color: #323232;
+            border: 1px solid $color-texto;
+            margin: 60px;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    section#curriculum{
+        ul{
+            margin-bottom: $margen-hyv*3;
+            li{
+                list-style: none;
+                color: $color-texto;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 14px;
+                text-align: left;
+                margin: 5px 40px;
+            }
+        }
+    }
+    section#RecentWorks{
+        div#carouselExampleFade {
+            margin: 60px 80px;
+        }        
+    }
+    section#Proyecto{
+        padding-bottom: $margen-hyv;
+    }
+    section{
+        div{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .IMG113, .IMG115{
+        display: none;
+    }
+    section#IMGIV1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 40%);
+        height: 70vh;
+        gap: 2rem;
+        margin: 0px 40px;
+    }
+    .IMG121, .IMG125{
+        display: none;
+    }
+    section#IMGIV2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 40%);
+        height: 70vh;
+        gap: 2rem;
+        margin: 0px 40px;
+    }
+    section#IMGP{
+        display: wrap;
+        margin: $margen-iyd;
+    }
+    section#IMGP{
+        img{
+            margin-bottom: $margen-hyv*2;
+        }
+    }
+    section#contacto{
+        margin-top: $margen-hyv*11;
+        ul{
+            margin-bottom: $margen-hyv*4;
+            li{
+                color: $color-texto;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 14px;
+                text-align: justify;
+                margin: 5px 40px;
+                a{
+                    text-decoration: underline;
+                    color: $color-texto;
+                }
+            }
+        }
+    }
+}
+
+/*Estilos de footer*/
+
+footer{
+    h2{
+        color: $color-fondo;
+    }
+    background-color: $color-texto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+    section.FooterContent{
+        ul{
+            padding-bottom: 40px;
+            li{
+                text-align: center;
+                a{
+                    text-decoration: underline;
+                    color: $color-fondo;
+                }
+            }
+        }
+    }
+    section{
+        div#derechos{
+            margin-top: $margen-hyv*3;
+        }
+    }
+}
+
+/*MQ de tablet*/
+
+@media screen and (min-width: 600px){
+    header{
+        height: 100px;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        z-index: 5;
+        text-align: center;
+        nav{
+            ul{
+                display: flex;
+                gap: 20px;
+            }
+        }
+        section.logo{
+            margin-left: 40px;
+        }
+    }
+    main{
+        section#section-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            div.section1{
+                div.subtitulo{
+                    h2{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        section#IMGIV1{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 2, 50%;
+            div.IMG114{
+                display: block;
+                grid-column: span 2;
+            }
+        }
+        section#IMGIV2{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 2, 50%;
+            div.IMG122{
+                grid-column: span 2;
+            }
+        }
+        section#IMGP{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 40px;
+        }
+    }
+    footer{
+        section.FooterContent{
+            display: flex;
+            text-align: center;
+            align-items: first baseline;
+            justify-content: space-between;
+            margin: $margen-hyv/2 $margen-iyd*1.5;
+        }
+    }
+}
+
+/*MQ de desktop*/
+
+@media screen and (min-width: 1024px){
+
+    /*estilos de portada*/
+
+    section#Portada{
+        display: block;
+        height: 100vh;
+        div.frase1{
+            display: flex;
+            background-color: $color-texto;
+            height: 100vh;
+            align-items: baseline;
+            justify-content: center;
+            gap: 10px;
+            h3{
+                font-family: 'Chivo', sans-serif;
+                color: $color-fondo;
+                font-size: 70px;
+                margin-top: 35vh;
+            }
+            h3#art{
+                color: $color-acento1;
+                font-family: 'Pacifico', cursive;
+                font-size: 150px;
+            }
+            h4{
+                font-family: 'Chivo', sans-serif;
+                font-size: 25px;
+                font-style: italic;
+            }
+        }
+    }
+    header{
+        border: none;
+    }
+    main{
+        section#IMGIV1{
+            div.IMG113, div.IMG114, div.IMG115{
+                display: block;
+            }
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 4, 25%;
+            div.IMG111{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            div.IMG112{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            div.IMG113{
+                grid-row: span 4;
+            }
+            div.IMG114, div.IMG115{
+                grid-row: span 2;
+            }
+        }
+        section#IMGIV2{
+            div.IMG121, div.IMG125{
+                display: block;
+            }
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 4, 25%;
+            div.IMG121{
+                grid-column: span 1;
+                grid-row: span 3;
+            }
+            div.IMG122{
+                grid-column: span 2;
+            }
+            div.IMG123{
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+            div.IMG124{
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+            div.IMG125{
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+        section#IMGP{
+            display: flex;
+        }
+    }
+}

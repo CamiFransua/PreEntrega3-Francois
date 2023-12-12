@@ -1,483 +1,288 @@
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;900&family=Chivo&family=Mate&family=Pacifico&display=swap');
-
-
-/**
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;900&family=Chivo&family=Mate&family=Pacifico&display=swap");
+/*
 font-family: 'Catamaran', sans-serif;
 font-family: 'Chivo', sans-serif;
 font-family: 'Mate', serif;
 font-family: 'Pacifico', cursive;
-**/
+*/
+/*Reset*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/*Estilos grales*/
-
+/*Estilos generales*/
 body {
-    background-color: rgb(28, 28, 28);
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
+  background-color: #1c1c1c; }
 
 h2 {
-    margin: 40px;
-}
+  font-family: 'Chivo', sans-serif;
+  color: #f5f5f5;
+  font-style: normal;
+  font-size: 30px;
+  margin: 40px; }
 
-/*Estilos de portada*/
-
-#Portada {
-    display: none;
-}
-
-/*Estilos de header*/
-
-header {
-    height: 200px;
-    display: flex;
-    background-color: rgb(28, 28, 28);
-    text-align: right;
-    justify-content: space-between;
-    margin: 20px 0px 0px ;
-    border-bottom: 2px solid #f5f5f5;
-}
-
-header nav ul {
-    font-family: 'Chivo', sans-serif;
-    margin: 0px 40px;
-}
-
-nav ul li#noselection a{
-    color: #f5f5f5;
-}
-
-
-nav ul li#selection a{
-    color: rgb(244, 211, 94);
-}
-
-header .logo {
-    margin-left: 20px;
-}
-
-
-/*Estilos de main*/
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: #f5f5f5;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 900;
-    margin-top: 40px;
-    text-align: center;
-}
-
-h2.name {
-    color: rgb(244, 211, 94);
-    margin-bottom: 0px;
-    text-align: center;
-}
-
-main section div.section2 div.foto {
-    display: flex;
-    justify-content: center;
-}
-
-#PageTitle {
-    padding-bottom: 40px;
-}
-
-.Biografia p {
-    padding: 40px 10px;
-    background-color: #323232;
-    border: 1px solid #f5f5f5;
-    margin: 60px;
-    text-align: center;
-    font-size: 16px;
-}
-
-h2 {
-    font-family: 'Chivo', sans-serif;
-    color: #f5f5f5;
-    font-style: normal;
-    font-size: 30px;
-    margin-right: 40px;
-    margin-left: 40px;
-}
+h5 {
+  font-size: 10px; }
 
 p {
-    color: #f5f5f5;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    margin: 80px;
-}
+  color: #f5f5f5;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin: 80px; }
 
-#carouselExampleFade {
-    margin: 60px 80px;
-}
+a {
+  text-decoration: none; }
 
-/*Estilos de CV*/
+ul {
+  list-style: none; }
 
-#curriculum ul li {
+/*Estilos de portada*/
+#Portada {
+  display: none; }
+
+/*Estilos de header*/
+header {
+  display: flex;
+  height: 200px;
+  background-color: #1c1c1c;
+  text-align: right;
+  justify-content: space-between;
+  margin: 20px 0px 0px;
+  border-bottom: 2px solid #f5f5f5; }
+  header section.logo img {
+    margin-left: 20px; }
+  header nav ul {
+    list-style: none;
+    font-family: 'Chivo', sans-serif;
+    margin: 0px 40px; }
+    header nav ul li#noselection a {
+      text-decoration: none;
+      color: #f5f5f5; }
+    header nav ul li#selection a {
+      text-decoration: none;
+      color: #f4d35e; }
+
+/*Estilos de main*/
+main section#section-container div.section1 div.titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #f5f5f5;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 900;
+  margin-top: 40px;
+  text-align: center; }
+
+main section#section-container div.section1 div.subtitulo h2.name {
+  color: #f4d35e;
+  text-align: center;
+  margin-bottom: 0px; }
+
+main section#section-container div.section2 div.foto {
+  display: flex;
+  justify-content: center; }
+
+main section.PageTitle {
+  padding-bottom: 40px; }
+
+main section.Biografia p {
+  padding: 40px 10px;
+  background-color: #323232;
+  border: 1px solid #f5f5f5;
+  margin: 60px;
+  text-align: center;
+  font-size: 16px; }
+
+main section#curriculum ul {
+  margin-bottom: 60px; }
+  main section#curriculum ul li {
     list-style: none;
     color: #f5f5f5;
     font-family: 'Catamaran', sans-serif;
     font-size: 14px;
     text-align: left;
-    margin: 5px 40px;
-}
+    margin: 5px 40px; }
 
-#curriculum ul {
-    margin-bottom: 60px;
-}
+main section#RecentWorks div#carouselExampleFade {
+  margin: 60px 80px; }
 
-#Proyecto {
-    padding-bottom: 20px;
-}
+main section#Proyecto {
+  padding-bottom: 20px; }
 
-/*grid en Id Visual*/
+main section div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
-main .IMG113, .IMG115 { /*Me borra tambien la .IMG114, consultar*/
-    display: none;
-}
+main .IMG113, main .IMG115 {
+  display: none; }
 
 main section#IMGIV1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 40%);
-    height: 70vh;
-    gap: 2rem;
-    margin: 0px 40px;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 40%);
+  height: 70vh;
+  gap: 2rem;
+  margin: 0px 40px; }
 
-main section div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main .IMG121, .IMG125 {
-    display: none;
-}
+main .IMG121, main .IMG125 {
+  display: none; }
 
 main section#IMGIV2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 40%);
-    height: 70vh;
-    gap: 2rem;
-    margin: 0px 40px;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 40%);
+  height: 70vh;
+  gap: 2rem;
+  margin: 0px 40px; }
 
 main section#IMGP {
-    display: wrap;
-    margin: 40px 40px;
-}
+  display: wrap;
+  margin: 40px; }
 
 main section#IMGP img {
-    margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
-main section div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/*Contacto*/
-
-section#contacto ul {
-    margin-bottom: 80px;
-}
-
-section#contacto ul li {
-    list-style: none;
-    color: #f5f5f5;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    margin: 5px 40px;
-}
-
-#contacto ul li a{
-    list-style: none;
-    text-decoration: underline;
-    color: #f5f5f5;
-}
-
-#contacto { /*Tuve que bajar esta seccion 220px porque me quedaba superpuesta a la ultima imagen. No entiendo por que*/
-    margin-top: 220px;
-}
-section#contacto ul {
-    margin-bottom: 80px;
-}
-
-section#contacto ul li {
-    list-style: none;
-    color: #f5f5f5;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    margin: 5px 40px;
-}
-
-#contacto ul li a{
-    list-style: none;
-    text-decoration: underline;
-    color: #f5f5f5;
-}
+main section#contacto {
+  margin-top: 220px; }
+  main section#contacto ul {
+    margin-bottom: 80px; }
+    main section#contacto ul li {
+      color: #f5f5f5;
+      font-family: 'Catamaran', sans-serif;
+      font-size: 14px;
+      text-align: justify;
+      margin: 5px 40px; }
+      main section#contacto ul li a {
+        text-decoration: underline;
+        color: #f5f5f5; }
 
 /*Estilos de footer*/
-
-h5 {
-    font-size: 10px;
-}
-
 footer {
-    background-color: #f5f5f5;
-    padding-top: 20px;
-    padding-bottom: 60px;
-    text-align: center;
-    font-family: 'Chivo', sans-serif;
+  background-color: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+  font-family: 'Chivo', sans-serif; }
+  footer h2 {
+    color: #1c1c1c; }
+  footer section.FooterContent ul {
+    padding-bottom: 40px; }
+    footer section.FooterContent ul li {
+      text-align: center; }
+      footer section.FooterContent ul li a {
+        text-decoration: underline;
+        color: #1c1c1c; }
+  footer section div#derechos {
+    margin-top: 60px; }
 
-}
-
-footer .FooterContent ul li a {
-    list-style: none;
-    text-decoration: underline;
-    color: rgb(28, 28, 28);
-}
-
-footer .FooterContent #FooterContent{
-    list-style: none;
-    color: rgb(28, 28, 28);
-}
-
-footer .FooterContent ul li {
-    color: rgb(28, 28, 28);
-    text-align: center;
-    
-}
-
-footer .FooterContent ul {
-    padding-bottom: 40px;
-}
-
-footer section div#derechos {
-    margin-top: 60px;
-}
-
-/*Media query de tablet*/
-
-@media screen and (min-width:600px) {
-    header {
-        height: 100px;
-        align-items: center;
-        position: sticky;
-        top: 0px;
-        z-index: 5;
-        text-align: center;
-
-    }
-        
+/*MQ de tablet*/
+@media screen and (min-width: 600px) {
+  header {
+    height: 100px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    text-align: center; }
     header nav ul {
-        display: flex;
-        gap: 20px;
-    }
-        
-    header .logo {
-        margin-left: 40px;
-    }
+      display: flex;
+      gap: 20px; }
+    header section.logo {
+      margin-left: 40px; }
+  main section#section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; }
+    main section#section-container div.section1 div.subtitulo h2 {
+      text-align: right; }
+  main section#IMGIV1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2, 50%; }
+    main section#IMGIV1 div.IMG114 {
+      display: block;
+      grid-column: span 2; }
+  main section#IMGIV2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2, 50%; }
+    main section#IMGIV2 div.IMG122 {
+      grid-column: span 2; }
+  main section#IMGP {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px; }
+  footer section.FooterContent {
+    display: flex;
+    text-align: center;
+    align-items: first baseline;
+    justify-content: space-between;
+    margin: 10px 60px; } }
 
-    #section-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 400px;
-    }
-
-    #section-container div.section1 div.subtitulo h2 {
-        text-align: right;
-    }
-
-    main .IMG114 { /*No anda*/
-        display: block;
-    }
-
-    main section#IMGIV1 {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2, 50%;
-    }
-
-    main .IMG114 {
-        grid-column: span 2;
-    }
-
-    main section#IMGIV2 {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2, 50%;
-    }
-
-    main .IMG122 {
-        grid-column: span 2;
-    }
-
-    main section#IMGP {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 40px;
-    }
-
-    footer .FooterContent {
-        display: flex;
-        text-align: center;
-        align-items: first baseline;
-        justify-content: space-between;
-        margin: 10px 60px;
-    }
-}
-
-/*Media query de desktop*/
-
+/*MQ de desktop*/
 @media screen and (min-width: 1024px) {
-    header {
-        border: none;
-    }
-
-    /*Estilos de portada*/
-
-    #Portada {
-        display: block;
-        height: 100vh;
-    }
-
-    .frase1 {
-        display: flex;
-        background-color: #f5f5f5;
-        height: 100vh;
-        align-items: baseline;
-        justify-content: center;
-        gap: 10px;
-    }
-
-
-    .frase1 h3 {
+  /*estilos de portada*/
+  section#Portada {
+    display: block;
+    height: 100vh; }
+    section#Portada div.frase1 {
+      display: flex;
+      background-color: #f5f5f5;
+      height: 100vh;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px; }
+      section#Portada div.frase1 h3 {
         font-family: 'Chivo', sans-serif;
-        color: rgb(28, 28, 28);
+        color: #1c1c1c;
         font-size: 70px;
-        margin-top: 35vh;
-    }
-
-
-    .frase1 #art {
-        color: rgb(207,18, 89);
+        margin-top: 35vh; }
+      section#Portada div.frase1 h3#art {
+        color: #cf1259;
         font-family: 'Pacifico', cursive;
-        font-size: 150px;
-    }
-
-
-    .frase1 h4 {
+        font-size: 150px; }
+      section#Portada div.frase1 h4 {
         font-family: 'Chivo', sans-serif;
         font-size: 25px;
-        font-style: italic;
-    }
-
-
-    /*main .IMG113, .IMG114, .IMG115{
-        display: block;
-    } Dejo esto en comentario porque no puedo lograr colocarlo en la grilla*/
-    
-    main section#IMGIV1 {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 4, 25%;
-    }
-
-    .IMG111 {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-
-    .IMG112 {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-
-    .IMG113 { /*Las siguientes tres imagenes estarian codeadas asi si apareciesen :D*/
-        grid-row: span 4;
-    }
-
-    .IMG114, .IMG115 {
-        grid-row: span 2;
-    }
-
-    main .IMG121, .IMG125 {
-        display: block;
-    }
-
-    main section#IMGIV2 {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 4, 25%;
-    }
-
-    .IMG121 {
-        grid-column: span 1;
-        grid-row: span 3;
-    }
-
-    .IMG122 {
-        grid-column: span 2;
-    }
-
-    .IMG123 {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-
-    .IMG124 {
-        grid-column: span 1;
-        grid-row: span 2;
-    }
-
-    .IMG125 {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-
-    main section#IMGP {
-        display: flex;
-    }
-}
-
-
-
-
-
-
-/*
-#form {
-    display: flex;
-    padding: 40px;
-    justify-content: center;
-}
-
-#form label{
-    font-family: 'Chivo', sans-serif;
-    color: #f5f5f5;
-    font-style: light;
-}
-*/
-
+        font-style: italic; }
+  header {
+    border: none; }
+  main section#IMGIV1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4, 25%; }
+    main section#IMGIV1 div.IMG113, main section#IMGIV1 div.IMG114, main section#IMGIV1 div.IMG115 {
+      display: block; }
+    main section#IMGIV1 div.IMG111 {
+      grid-column: span 2;
+      grid-row: span 2; }
+    main section#IMGIV1 div.IMG112 {
+      grid-column: span 2;
+      grid-row: span 2; }
+    main section#IMGIV1 div.IMG113 {
+      grid-row: span 4; }
+    main section#IMGIV1 div.IMG114, main section#IMGIV1 div.IMG115 {
+      grid-row: span 2; }
+  main section#IMGIV2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4, 25%; }
+    main section#IMGIV2 div.IMG121, main section#IMGIV2 div.IMG125 {
+      display: block; }
+    main section#IMGIV2 div.IMG121 {
+      grid-column: span 1;
+      grid-row: span 3; }
+    main section#IMGIV2 div.IMG122 {
+      grid-column: span 2; }
+    main section#IMGIV2 div.IMG123 {
+      grid-column: span 1;
+      grid-row: span 1; }
+    main section#IMGIV2 div.IMG124 {
+      grid-column: span 1;
+      grid-row: span 2; }
+    main section#IMGIV2 div.IMG125 {
+      grid-column: span 1;
+      grid-row: span 1; }
+  main section#IMGP {
+    display: flex; } }
