@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;900&family=Chivo&family=Mate&family=Pacifico&display=swap');
-@import "secundario/variables";
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /*
 font-family: 'Catamaran', sans-serif;
@@ -93,11 +104,26 @@ header{
     }
 }
 
+header.home{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
 /*Estilos de main*/
 
 main{
+    section#Bio, #curriculum, #RecentWorks, #contacto, #Proyecto1, #Proyecto2{
+        h2{
+            padding-bottom: $margen-hyv/2;
+            border-bottom: 1px solid $color-texto;
+        }
+    }
     section#section-container{
         div.section1{
+                animation-duration: 2s;
+                animation-name: aparecer;
+                animation-iteration-count: 1;
             div.titulo{
                 display: flex;
                 justify-content: center;
@@ -117,6 +143,9 @@ main{
             }
         }
         div.section2{
+            animation-duration: 3s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
             div.foto{
                 display: flex;
                 justify-content: center;
@@ -154,7 +183,7 @@ main{
             margin: 60px 80px;
         }        
     }
-    section#Proyecto{
+    section#Proyecto1{
         padding-bottom: $margen-hyv;
     }
     section{
@@ -170,23 +199,33 @@ main{
         display: none;
     }
     section#IMGIV1{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 40%);
-        height: 70vh;
-        gap: 2rem;
-        margin: 0px 40px;
+        height: 100vh;
+        div.sectionimg1{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 40%);
+            height: 70vh;
+            gap: 2rem;
+            margin: 0px 40px;
+        }
+
+    }
+    section#Proyecto2{
+        padding-bottom: $margen-hyv;
     }
     .IMG121, .IMG125{
         display: none;
     }
     section#IMGIV2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 40%);
-        height: 70vh;
-        gap: 2rem;
-        margin: 0px 40px;
+        height: 100vh;
+        div.sectionimg2{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 40%);
+            height: 70vh;
+            gap: 2rem;
+            margin: 0px 40px;
+        }
     }
     section#IMGP{
         display: wrap;
@@ -197,8 +236,29 @@ main{
             margin-bottom: $margen-hyv*2;
         }
     }
+    section#Proyecto2{
+        padding-top: $margen-hyv;
+    }
+    section#Carrouselrs1, #Carrouselrs2{
+        display: none;
+    }
+    section#proyectors1, #proyectors2{
+        div#carouselExampleFade {
+            margin: 60px 80px;
+        }        
+    }
+    section#IMGWD1, #IMGWD2{
+        display: flex;
+        justify-content: center;
+        margin: 0 $margen-iyd;
+    }
+    section#IMGUXR2{
+        margin: 0 $margen-iyd;
+    }
     section#contacto{
-        margin-top: $margen-hyv*11;
+        padding-top: $margen-hyv;
+    }
+    section#contacto{
         ul{
             margin-bottom: $margen-hyv*4;
             li{
@@ -281,18 +341,23 @@ footer{
             }
         }
         section#IMGIV1{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 2, 50%;
-            div.IMG114{
-                display: block;
-                grid-column: span 2;
+            height: 70vh;
+            div.sectionimg1{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 2, 50%;
+                div.IMG114{
+                    grid-column: span 2;
+                }
             }
         }
         section#IMGIV2{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 2, 50%;
-            div.IMG122{
-                grid-column: span 2;
+            height: 70vh;
+            div.sectionimg2{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 2, 50%;
+                div.IMG122{
+                    grid-column: span 2;
+                }
             }
         }
         section#IMGP{
@@ -349,57 +414,82 @@ footer{
     }
     header{
         border: none;
+        li:hover{
+            animation-duration: 1s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+        }
     }
     main{
         section#IMGIV1{
-            div.IMG113, div.IMG114, div.IMG115{
+            div.IMG113, div.IMG115{
                 display: block;
             }
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 4, 25%;
-            div.IMG111{
-                grid-column: span 2;
-                grid-row: span 2;
-            }
-            div.IMG112{
-                grid-column: span 2;
-                grid-row: span 2;
-            }
-            div.IMG113{
-                grid-row: span 4;
-            }
-            div.IMG114, div.IMG115{
-                grid-row: span 2;
+            height: 70vh;
+            div.sectionimg1{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 2, 50%;
+                div.IMG111{
+                    grid-column: span 2;
+                    grid-row: span 1;
+                }
+                div.IMG112{
+                    grid-column: span 2;
+                    grid-row: span 1;
+                }
+                div.IMG113{
+                    grid-row: span 1;
+                }
+                div.IMG114, div.IMG115{
+                    grid-row: span 1;
+                }
             }
         }
         section#IMGIV2{
+            height: 70vh;
             div.IMG121, div.IMG125{
                 display: block;
             }
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 4, 25%;
-            div.IMG121{
-                grid-column: span 1;
-                grid-row: span 3;
+            div.sectionimg2{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 3, 1fr;
+                div.IMG121{
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                div.IMG122{
+                    grid-column: span 2;
+                }
+                div.IMG123{
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                div.IMG124{
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                div.IMG125{
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
             }
-            div.IMG122{
-                grid-column: span 2;
-            }
-            div.IMG123{
-                grid-column: span 1;
-                grid-row: span 1;
-            }
-            div.IMG124{
-                grid-column: span 1;
-                grid-row: span 2;
-            }
-            div.IMG125{
-                grid-column: span 1;
-                grid-row: span 1;
-            }
+
         }
         section#IMGP{
             display: flex;
+        }
+        section#proyectors1, #proyectors2{
+            div#carouselExampleFade {
+                display: none;
+            }    
+        }
+        section#Carrouselrs1, #Carrouselrs2{
+            display: flex;
+            gap: 1px;
+            margin: $margen-iyd;
+        }
+        section#IMGUXR2{
+            margin: 0 $margen-iyd*3;
         }
     }
 }

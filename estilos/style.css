@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;900&family=Chivo&family=Mate&family=Pacifico&display=swap");
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /*
 font-family: 'Catamaran', sans-serif;
 font-family: 'Chivo', sans-serif;
@@ -64,25 +70,41 @@ header {
       text-decoration: none;
       color: #f4d35e; }
 
+header.home {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+
 /*Estilos de main*/
-main section#section-container div.section1 div.titulo {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  color: #f5f5f5;
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 900;
-  margin-top: 40px;
-  text-align: center; }
+main section#Bio h2, main #curriculum h2, main #RecentWorks h2, main #contacto h2, main #Proyecto1 h2, main #Proyecto2 h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f5f5f5; }
 
-main section#section-container div.section1 div.subtitulo h2.name {
-  color: #f4d35e;
-  text-align: center;
-  margin-bottom: 0px; }
+main section#section-container div.section1 {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+  main section#section-container div.section1 div.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #f5f5f5;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    margin-top: 40px;
+    text-align: center; }
+  main section#section-container div.section1 div.subtitulo h2.name {
+    color: #f4d35e;
+    text-align: center;
+    margin-bottom: 0px; }
 
-main section#section-container div.section2 div.foto {
-  display: flex;
-  justify-content: center; }
+main section#section-container div.section2 {
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+  main section#section-container div.section2 div.foto {
+    display: flex;
+    justify-content: center; }
 
 main section.PageTitle {
   padding-bottom: 40px; }
@@ -108,7 +130,7 @@ main section#curriculum ul {
 main section#RecentWorks div#carouselExampleFade {
   margin: 60px 80px; }
 
-main section#Proyecto {
+main section#Proyecto1 {
   padding-bottom: 20px; }
 
 main section div img {
@@ -120,23 +142,30 @@ main .IMG113, main .IMG115 {
   display: none; }
 
 main section#IMGIV1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 40%);
-  height: 70vh;
-  gap: 2rem;
-  margin: 0px 40px; }
+  height: 100vh; }
+  main section#IMGIV1 div.sectionimg1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40%);
+    height: 70vh;
+    gap: 2rem;
+    margin: 0px 40px; }
+
+main section#Proyecto2 {
+  padding-bottom: 20px; }
 
 main .IMG121, main .IMG125 {
   display: none; }
 
 main section#IMGIV2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 40%);
-  height: 70vh;
-  gap: 2rem;
-  margin: 0px 40px; }
+  height: 100vh; }
+  main section#IMGIV2 div.sectionimg2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40%);
+    height: 70vh;
+    gap: 2rem;
+    margin: 0px 40px; }
 
 main section#IMGP {
   display: wrap;
@@ -145,19 +174,37 @@ main section#IMGP {
 main section#IMGP img {
   margin-bottom: 40px; }
 
+main section#Proyecto2 {
+  padding-top: 20px; }
+
+main section#Carrouselrs1, main #Carrouselrs2 {
+  display: none; }
+
+main section#proyectors1 div#carouselExampleFade, main #proyectors2 div#carouselExampleFade {
+  margin: 60px 80px; }
+
+main section#IMGWD1, main #IMGWD2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 40px; }
+
+main section#IMGUXR2 {
+  margin: 0 40px; }
+
 main section#contacto {
-  margin-top: 220px; }
-  main section#contacto ul {
-    margin-bottom: 80px; }
-    main section#contacto ul li {
-      color: #f5f5f5;
-      font-family: 'Catamaran', sans-serif;
-      font-size: 14px;
-      text-align: justify;
-      margin: 5px 40px; }
-      main section#contacto ul li a {
-        text-decoration: underline;
-        color: #f5f5f5; }
+  padding-top: 20px; }
+
+main section#contacto ul {
+  margin-bottom: 80px; }
+  main section#contacto ul li {
+    color: #f5f5f5;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    margin: 5px 40px; }
+    main section#contacto ul li a {
+      text-decoration: underline;
+      color: #f5f5f5; }
 
 /*Estilos de footer*/
 footer {
@@ -200,16 +247,19 @@ footer {
     main section#section-container div.section1 div.subtitulo h2 {
       text-align: right; }
   main section#IMGIV1 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2, 50%; }
-    main section#IMGIV1 div.IMG114 {
-      display: block;
-      grid-column: span 2; }
+    height: 70vh; }
+    main section#IMGIV1 div.sectionimg1 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2, 50%; }
+      main section#IMGIV1 div.sectionimg1 div.IMG114 {
+        grid-column: span 2; }
   main section#IMGIV2 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2, 50%; }
-    main section#IMGIV2 div.IMG122 {
-      grid-column: span 2; }
+    height: 70vh; }
+    main section#IMGIV2 div.sectionimg2 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2, 50%; }
+      main section#IMGIV2 div.sectionimg2 div.IMG122 {
+        grid-column: span 2; }
   main section#IMGP {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -250,39 +300,55 @@ footer {
         font-style: italic; }
   header {
     border: none; }
+    header li:hover {
+      animation-duration: 1s;
+      animation-name: aparecer;
+      animation-iteration-count: 1; }
   main section#IMGIV1 {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 4, 25%; }
-    main section#IMGIV1 div.IMG113, main section#IMGIV1 div.IMG114, main section#IMGIV1 div.IMG115 {
+    height: 70vh; }
+    main section#IMGIV1 div.IMG113, main section#IMGIV1 div.IMG115 {
       display: block; }
-    main section#IMGIV1 div.IMG111 {
-      grid-column: span 2;
-      grid-row: span 2; }
-    main section#IMGIV1 div.IMG112 {
-      grid-column: span 2;
-      grid-row: span 2; }
-    main section#IMGIV1 div.IMG113 {
-      grid-row: span 4; }
-    main section#IMGIV1 div.IMG114, main section#IMGIV1 div.IMG115 {
-      grid-row: span 2; }
+    main section#IMGIV1 div.sectionimg1 {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 2, 50%; }
+      main section#IMGIV1 div.sectionimg1 div.IMG111 {
+        grid-column: span 2;
+        grid-row: span 1; }
+      main section#IMGIV1 div.sectionimg1 div.IMG112 {
+        grid-column: span 2;
+        grid-row: span 1; }
+      main section#IMGIV1 div.sectionimg1 div.IMG113 {
+        grid-row: span 1; }
+      main section#IMGIV1 div.sectionimg1 div.IMG114, main section#IMGIV1 div.sectionimg1 div.IMG115 {
+        grid-row: span 1; }
   main section#IMGIV2 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 4, 25%; }
+    height: 70vh; }
     main section#IMGIV2 div.IMG121, main section#IMGIV2 div.IMG125 {
       display: block; }
-    main section#IMGIV2 div.IMG121 {
-      grid-column: span 1;
-      grid-row: span 3; }
-    main section#IMGIV2 div.IMG122 {
-      grid-column: span 2; }
-    main section#IMGIV2 div.IMG123 {
-      grid-column: span 1;
-      grid-row: span 1; }
-    main section#IMGIV2 div.IMG124 {
-      grid-column: span 1;
-      grid-row: span 2; }
-    main section#IMGIV2 div.IMG125 {
-      grid-column: span 1;
-      grid-row: span 1; }
+    main section#IMGIV2 div.sectionimg2 {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 3, 1fr; }
+      main section#IMGIV2 div.sectionimg2 div.IMG121 {
+        grid-column: span 1;
+        grid-row: span 1; }
+      main section#IMGIV2 div.sectionimg2 div.IMG122 {
+        grid-column: span 2; }
+      main section#IMGIV2 div.sectionimg2 div.IMG123 {
+        grid-column: span 1;
+        grid-row: span 1; }
+      main section#IMGIV2 div.sectionimg2 div.IMG124 {
+        grid-column: span 1;
+        grid-row: span 1; }
+      main section#IMGIV2 div.sectionimg2 div.IMG125 {
+        grid-column: span 1;
+        grid-row: span 1; }
   main section#IMGP {
-    display: flex; } }
+    display: flex; }
+  main section#proyectors1 div#carouselExampleFade, main #proyectors2 div#carouselExampleFade {
+    display: none; }
+  main section#Carrouselrs1, main #Carrouselrs2 {
+    display: flex;
+    gap: 1px;
+    margin: 40px; }
+  main section#IMGUXR2 {
+    margin: 0 120px; } }

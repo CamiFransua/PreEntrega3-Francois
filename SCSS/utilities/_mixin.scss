@@ -1,0 +1,19 @@
+//@import 
+
+//mixin con parametros
+
+@mixin nombre ($width, $height, $color){
+    width: $width;
+    height: $height;
+    color: $color;
+    background-color: tomato;
+}
+
+
+//mixin sin parametros
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
