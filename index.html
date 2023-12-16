@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO - Camila Kreativ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- linkeo de CSS -->
     <link rel="stylesheet" href="./estilos/style.css">
 </head>
@@ -13,7 +17,7 @@
     <section id="Portada">
         <div class="frase1">
             <h3>Design can be</h3>
-            <h3 id="art">art</h3>
+            <h3 id="art" class="animate__animated animate__heartBeat">art</h3>
             <h3>.</h3>
             <h4>Paul Rand</h4>
         </div>
@@ -21,11 +25,11 @@
 
     <body>
      <!--Header-->
-    <header class="home">
+    <header>
 
         <!--Logo: IMG-->
         <section class="logo" id="LogoAlpha">
-            <a href="index.html"><img src="images/Logo.png" alt="Camila Kreativ"></a>
+            <a href="index.html"><img src="images/Logo.png" alt="Camila Kreativ" class="zoom"></a>
         </section>  
 
         <!--Menú de navegación-->
@@ -93,7 +97,7 @@
         </section>
 
         <!--Sección 3: Trabajos recientes-->
-        <section id="RecentWorks"><!--Consultar porque no anda-->
+        <section id="RecentWorks">
             <h2>Recent works</h2>
 
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -130,33 +134,12 @@
                 <li><a href="https://wa.link/ejgtke">WhatsApp</a></li>
                 <li><a href="mailto:camila.kreativ@gmail.com">Mail</a></li>
             </ul>
-            <!--
-            <form action="form.php" method="post" id="form"> 
-                <label for="">Name:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Names">
-
-                <label for="">E-mail:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="name@e-mail.com">
-        
-                <select name="" id="">
-                    <option value="">Thema</option>
-                    <option value="">Pricing</option>
-                    <option value="">Colaboration</option>
-                    <option value="">Other</option>
-                </select>
-        
-                <label for="">Message:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-        
-                <input type="submit" value="Send">
-            </form> 
-            -->
 
         </section>
     </main>
 
     <!--Footer-->
-    <footer> <!--Consultar xq en todas las otras pages queda en negrita el contenido del footer y en el index no-->
+    <footer>
         <section class="FooterContent">
             <ul>
                 <li>

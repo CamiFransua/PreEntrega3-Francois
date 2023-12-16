@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;900&family=Chivo&family=Mate&family=Pacifico&display=swap');
 @import "utilities/variables";
 @import "utilities/mixin";
-@import "utilities/extend";
 
 @keyframes aparecer{
     0%{
@@ -12,12 +11,18 @@
     }
 }
 
-/*
-font-family: 'Catamaran', sans-serif;
-font-family: 'Chivo', sans-serif;
-font-family: 'Mate', serif;
-font-family: 'Pacifico', cursive;
-*/
+@keyframes zoom{
+    10%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1,1);
+
+    }
+}
 
 /*Reset*/
 
@@ -61,7 +66,6 @@ ul{
     list-style: none;
 }
 
-
 /*Estilos de portada*/
 
 #Portada{
@@ -71,11 +75,10 @@ ul{
 /*Estilos de header*/
 
 header{
-    display: flex;
+    @include flex-content(space-between);
     height: 200px;
     background-color: $color-fondo;
     text-align: right;
-    justify-content: space-between;
     margin: $margen-hyv 0px 0px;
     border-bottom: 2px solid $color-texto;
     section.logo{
@@ -104,12 +107,6 @@ header{
     }
 }
 
-header.home{
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-}
-
 /*Estilos de main*/
 
 main{
@@ -125,8 +122,7 @@ main{
                 animation-name: aparecer;
                 animation-iteration-count: 1;
             div.titulo{
-                display: flex;
-                justify-content: center;
+                @include flex-content(center);
                 font-size: 40px;
                 color: $color-texto;
                 font-family: 'Catamaran', sans-serif;
@@ -143,12 +139,11 @@ main{
             }
         }
         div.section2{
-            animation-duration: 3s;
             animation-name: aparecer;
+            animation-duration: 3s;
             animation-iteration-count: 1;
             div.foto{
-                display: flex;
-                justify-content: center;
+                @include flex-content(center)
             }
         }
     }
@@ -248,8 +243,7 @@ main{
         }        
     }
     section#IMGWD1, #IMGWD2{
-        display: flex;
-        justify-content: center;
+        @include flex-content(center);
         margin: 0 $margen-iyd;
     }
     section#IMGUXR2{
@@ -328,8 +322,7 @@ footer{
     }
     main{
         section#section-container{
-            display: flex;
-            justify-content: center;
+            @include flex-content(center);
             align-items: center;
             height: 400px;
             div.section1{
@@ -369,10 +362,9 @@ footer{
     }
     footer{
         section.FooterContent{
-            display: flex;
+            @include flex-content(space-between);
             text-align: center;
             align-items: first baseline;
-            justify-content: space-between;
             margin: $margen-hyv/2 $margen-iyd*1.5;
         }
     }
@@ -382,17 +374,23 @@ footer{
 
 @media screen and (min-width: 1024px){
 
+    img.zoom:hover{
+        animation-name: zoom;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+    }
+
     /*estilos de portada*/
 
     section#Portada{
         display: block;
         height: 100vh;
         div.frase1{
-            display: flex;
+            @include flex-content(center);
             background-color: $color-texto;
             height: 100vh;
             align-items: baseline;
-            justify-content: center;
             gap: 10px;
             h3{
                 font-family: 'Chivo', sans-serif;
@@ -476,7 +474,7 @@ footer{
 
         }
         section#IMGP{
-            display: flex;
+            @include flex-content(space-between);
         }
         section#proyectors1, #proyectors2{
             div#carouselExampleFade {
@@ -484,7 +482,7 @@ footer{
             }    
         }
         section#Carrouselrs1, #Carrouselrs2{
-            display: flex;
+            @include flex-content(center);
             gap: 1px;
             margin: $margen-iyd;
         }

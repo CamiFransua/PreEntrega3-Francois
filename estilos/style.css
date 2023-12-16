@@ -5,12 +5,14 @@
   100% {
     opacity: 1; } }
 
-/*
-font-family: 'Catamaran', sans-serif;
-font-family: 'Chivo', sans-serif;
-font-family: 'Mate', serif;
-font-family: 'Pacifico', cursive;
-*/
+@keyframes zoom {
+  10% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.1, 1.1); }
+  100% {
+    transform: scale(1, 1); } }
+
 /*Reset*/
 * {
   margin: 0;
@@ -51,10 +53,10 @@ ul {
 /*Estilos de header*/
 header {
   display: flex;
+  justify-content: space-between;
   height: 200px;
   background-color: #1c1c1c;
   text-align: right;
-  justify-content: space-between;
   margin: 20px 0px 0px;
   border-bottom: 2px solid #f5f5f5; }
   header section.logo img {
@@ -69,11 +71,6 @@ header {
     header nav ul li#selection a {
       text-decoration: none;
       color: #f4d35e; }
-
-header.home {
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: 1; }
 
 /*Estilos de main*/
 main section#Bio h2, main #curriculum h2, main #RecentWorks h2, main #contacto h2, main #Proyecto1 h2, main #Proyecto2 h2 {
@@ -99,8 +96,8 @@ main section#section-container div.section1 {
     margin-bottom: 0px; }
 
 main section#section-container div.section2 {
-  animation-duration: 3s;
   animation-name: aparecer;
+  animation-duration: 3s;
   animation-iteration-count: 1; }
   main section#section-container div.section2 div.foto {
     display: flex;
@@ -267,23 +264,28 @@ footer {
     gap: 40px; }
   footer section.FooterContent {
     display: flex;
+    justify-content: space-between;
     text-align: center;
     align-items: first baseline;
-    justify-content: space-between;
     margin: 10px 60px; } }
 
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
+  img.zoom:hover {
+    animation-name: zoom;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 1s; }
   /*estilos de portada*/
   section#Portada {
     display: block;
     height: 100vh; }
     section#Portada div.frase1 {
       display: flex;
+      justify-content: center;
       background-color: #f5f5f5;
       height: 100vh;
       align-items: baseline;
-      justify-content: center;
       gap: 10px; }
       section#Portada div.frase1 h3 {
         font-family: 'Chivo', sans-serif;
@@ -343,11 +345,13 @@ footer {
         grid-column: span 1;
         grid-row: span 1; }
   main section#IMGP {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
   main section#proyectors1 div#carouselExampleFade, main #proyectors2 div#carouselExampleFade {
     display: none; }
   main section#Carrouselrs1, main #Carrouselrs2 {
     display: flex;
+    justify-content: center;
     gap: 1px;
     margin: 40px; }
   main section#IMGUXR2 {
