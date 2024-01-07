@@ -185,6 +185,10 @@ main section#IMGWD1, main #IMGWD2 {
   justify-content: center;
   margin: 0 40px; }
 
+main div.Before {
+  max-width: 400px;
+  margin: auto; }
+
 main section#IMGUXR2 {
   margin: 0 40px; }
 
@@ -205,6 +209,7 @@ main section#contacto ul {
 
 /*Estilos de footer*/
 footer {
+  width: 100vw;
   background-color: #f5f5f5;
   padding-top: 20px;
   padding-bottom: 60px;
@@ -262,6 +267,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px; }
+  main section#proyectors1, main section#proyectrs2 {
+    max-width: 600px;
+    margin-inline: auto; }
   footer section.FooterContent {
     display: flex;
     justify-content: space-between;
@@ -279,6 +287,7 @@ footer {
   /*estilos de portada*/
   section#Portada {
     display: block;
+    width: 100vw;
     height: 100vh; }
     section#Portada div.frase1 {
       display: flex;
@@ -301,58 +310,68 @@ footer {
         font-size: 25px;
         font-style: italic; }
   header {
-    border: none; }
+    border: none;
+    max-width: 1200px;
+    margin-inline: auto; }
     header li:hover {
       animation-duration: 1s;
       animation-name: aparecer;
       animation-iteration-count: 1; }
-  main section#IMGIV1 {
-    height: 70vh; }
-    main section#IMGIV1 div.IMG113, main section#IMGIV1 div.IMG115 {
-      display: block; }
-    main section#IMGIV1 div.sectionimg1 {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 2, 50%; }
-      main section#IMGIV1 div.sectionimg1 div.IMG111 {
-        grid-column: span 2;
-        grid-row: span 1; }
-      main section#IMGIV1 div.sectionimg1 div.IMG112 {
-        grid-column: span 2;
-        grid-row: span 1; }
-      main section#IMGIV1 div.sectionimg1 div.IMG113 {
-        grid-row: span 1; }
-      main section#IMGIV1 div.sectionimg1 div.IMG114, main section#IMGIV1 div.sectionimg1 div.IMG115 {
-        grid-row: span 1; }
-  main section#IMGIV2 {
-    height: 70vh; }
-    main section#IMGIV2 div.IMG121, main section#IMGIV2 div.IMG125 {
-      display: block; }
-    main section#IMGIV2 div.sectionimg2 {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 3, 1fr; }
-      main section#IMGIV2 div.sectionimg2 div.IMG121 {
-        grid-column: span 1;
-        grid-row: span 1; }
-      main section#IMGIV2 div.sectionimg2 div.IMG122 {
-        grid-column: span 2; }
-      main section#IMGIV2 div.sectionimg2 div.IMG123 {
-        grid-column: span 1;
-        grid-row: span 1; }
-      main section#IMGIV2 div.sectionimg2 div.IMG124 {
-        grid-column: span 1;
-        grid-row: span 1; }
-      main section#IMGIV2 div.sectionimg2 div.IMG125 {
-        grid-column: span 1;
-        grid-row: span 1; }
-  main section#IMGP {
-    display: flex;
-    justify-content: space-between; }
-  main section#proyectors1 div#carouselExampleFade, main #proyectors2 div#carouselExampleFade {
-    display: none; }
-  main section#Carrouselrs1, main #Carrouselrs2 {
-    display: flex;
-    justify-content: center;
-    gap: 1px;
-    margin: 40px; }
-  main section#IMGUXR2 {
-    margin: 0 120px; } }
+  main {
+    max-width: 1200px;
+    margin-inline: auto; }
+    main section#IMGIV1 {
+      height: 70vh; }
+      main section#IMGIV1 div.IMG113, main section#IMGIV1 div.IMG115 {
+        display: block; }
+      main section#IMGIV1 div.sectionimg1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2, 50%; }
+        main section#IMGIV1 div.sectionimg1 div.IMG111 {
+          grid-column: span 2;
+          grid-row: span 1; }
+        main section#IMGIV1 div.sectionimg1 div.IMG112 {
+          grid-column: span 2;
+          grid-row: span 1; }
+        main section#IMGIV1 div.sectionimg1 div.IMG113 {
+          grid-row: span 1; }
+        main section#IMGIV1 div.sectionimg1 div.IMG114, main section#IMGIV1 div.sectionimg1 div.IMG115 {
+          grid-row: span 1; }
+    main section#IMGIV2 {
+      height: 70vh; }
+      main section#IMGIV2 div.IMG121, main section#IMGIV2 div.IMG125 {
+        display: block; }
+      main section#IMGIV2 div.sectionimg2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3, 1fr; }
+        main section#IMGIV2 div.sectionimg2 div.IMG121 {
+          grid-column: span 1;
+          grid-row: span 1; }
+        main section#IMGIV2 div.sectionimg2 div.IMG122 {
+          grid-column: span 2; }
+        main section#IMGIV2 div.sectionimg2 div.IMG123 {
+          grid-column: span 1;
+          grid-row: span 1; }
+        main section#IMGIV2 div.sectionimg2 div.IMG124 {
+          grid-column: span 1;
+          grid-row: span 1; }
+        main section#IMGIV2 div.sectionimg2 div.IMG125 {
+          grid-column: span 1;
+          grid-row: span 1; }
+    main section#IMGP {
+      display: flex;
+      justify-content: space-between; }
+    main section#proyectors1 div#carouselExampleFade, main #proyectors2 div#carouselExampleFade {
+      display: none; }
+    main section#Carrouselrs1, main #Carrouselrs2 {
+      display: flex;
+      justify-content: center;
+      gap: 1px;
+      margin: 40px; }
+    main section#IMGUXR2 {
+      margin: 0 120px; }
+    main section#Carrouselrs2 {
+      gap: 20px; }
+  footer section.FooterContent {
+    max-width: 800px;
+    margin-inline: auto; } }

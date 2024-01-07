@@ -246,6 +246,10 @@ main{
         @include flex-content(center);
         margin: 0 $margen-iyd;
     }
+    div.Before{
+        max-width: 400px;
+        margin: auto;
+    }
     section#IMGUXR2{
         margin: 0 $margen-iyd;
     }
@@ -273,6 +277,7 @@ main{
 /*Estilos de footer*/
 
 footer{
+    width: 100vw;
     h2{
         color: $color-fondo;
     }
@@ -359,6 +364,10 @@ footer{
             grid-template-rows: repeat(2, 1fr);
             gap: 40px;
         }
+        section#proyectors1, section#proyectrs2{
+            max-width: 600px;
+            margin-inline: auto; 
+        }
     }
     footer{
         section.FooterContent{
@@ -385,6 +394,7 @@ footer{
 
     section#Portada{
         display: block;
+        width: 100vw;
         height: 100vh;
         div.frase1{
             @include flex-content(center);
@@ -412,6 +422,8 @@ footer{
     }
     header{
         border: none;
+        max-width: 1200px;
+        margin-inline: auto;
         li:hover{
             animation-duration: 1s;
             animation-name: aparecer;
@@ -419,6 +431,8 @@ footer{
         }
     }
     main{
+        max-width: 1200px;
+        margin-inline: auto;
         section#IMGIV1{
             div.IMG113, div.IMG115{
                 display: block;
@@ -489,5 +503,15 @@ footer{
         section#IMGUXR2{
             margin: 0 $margen-iyd*3;
         }
+        section#Carrouselrs2{
+            gap: 20px;
+        }
+    }
+    footer{
+        section.FooterContent{
+            max-width: 800px;
+            margin-inline: auto;
+        }
+
     }
 }
